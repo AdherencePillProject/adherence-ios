@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NavViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.navigationController action:@selector(openVerticalMenu:)];
+    
+    self.navigationItem.title = @"All";
 }
 
 - (void)didReceiveMemoryWarning {

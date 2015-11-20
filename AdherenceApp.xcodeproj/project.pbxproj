@@ -16,6 +16,9 @@
 		ED5296F51BFEB58100B2EF7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5296F31BFEB58100B2EF7C /* LaunchScreen.storyboard */; };
 		ED5297001BFEB58100B2EF7C /* AdherenceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296FF1BFEB58100B2EF7C /* AdherenceAppTests.m */; };
 		ED52970B1BFEB58100B2EF7C /* AdherenceAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED52970A1BFEB58100B2EF7C /* AdherenceAppUITests.m */; };
+		ED65DBE01BFEBEBD00244EA4 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBDF1BFEBEBD00244EA4 /* NavViewController.m */; };
+		ED65DBE31BFEBF9700244EA4 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */; };
+		ED65DBE61BFEBFA900244EA4 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		ED5297061BFEB58100B2EF7C /* AdherenceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdherenceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED52970A1BFEB58100B2EF7C /* AdherenceAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdherenceAppUITests.m; sourceTree = "<group>"; };
 		ED52970C1BFEB58100B2EF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED65DBDE1BFEBEBD00244EA4 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		ED65DBDF1BFEBEBD00244EA4 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		ED65DBE11BFEBF9700244EA4 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		ED65DBE41BFEBFA900244EA4 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +136,9 @@
 			children = (
 				ED5296E81BFEB58100B2EF7C /* AppDelegate.h */,
 				ED5296E91BFEB58100B2EF7C /* AppDelegate.m */,
-				ED5296EB1BFEB58100B2EF7C /* ViewController.h */,
-				ED5296EC1BFEB58100B2EF7C /* ViewController.m */,
+				ED65DBDE1BFEBEBD00244EA4 /* NavViewController.h */,
+				ED65DBDF1BFEBEBD00244EA4 /* NavViewController.m */,
+				ED65DBE71BFEBFAD00244EA4 /* ViewControllers */,
 				ED5296EE1BFEB58100B2EF7C /* Main.storyboard */,
 				ED5296F11BFEB58100B2EF7C /* Assets.xcassets */,
 				ED5296F31BFEB58100B2EF7C /* LaunchScreen.storyboard */,
@@ -162,6 +172,19 @@
 				ED52970C1BFEB58100B2EF7C /* Info.plist */,
 			);
 			path = AdherenceAppUITests;
+			sourceTree = "<group>";
+		};
+		ED65DBE71BFEBFAD00244EA4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED5296EB1BFEB58100B2EF7C /* ViewController.h */,
+				ED5296EC1BFEB58100B2EF7C /* ViewController.m */,
+				ED65DBE11BFEBF9700244EA4 /* CalendarViewController.h */,
+				ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */,
+				ED65DBE41BFEBFA900244EA4 /* ProgressViewController.h */,
+				ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +369,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5296ED1BFEB58100B2EF7C /* ViewController.m in Sources */,
+				ED65DBE61BFEBFA900244EA4 /* ProgressViewController.m in Sources */,
 				ED5296EA1BFEB58100B2EF7C /* AppDelegate.m in Sources */,
+				ED65DBE01BFEBEBD00244EA4 /* NavViewController.m in Sources */,
+				ED65DBE31BFEBF9700244EA4 /* CalendarViewController.m in Sources */,
 				ED5296E71BFEB58100B2EF7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
