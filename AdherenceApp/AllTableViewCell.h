@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AllTableViewCell.h
 //  AdherenceApp
 //
 //  Created by Shana Azria Dev on 11/19/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AllTableViewCell : UITableViewCell
 
 @end
-

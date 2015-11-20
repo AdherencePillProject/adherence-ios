@@ -7,7 +7,7 @@
 //
 
 #import "NavViewController.h"
-#import "ViewController.h"
+#import "AllTableViewController.h"
 #import "ProgressViewController.h"
 #import "CalendarViewController.h"
 
@@ -48,7 +48,7 @@
     
     
     item1.actionBlock = ^{
-        ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"left"];
+        AllTableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"left"];
         if ([self.viewControllers[0] isEqual:vc])
             return;
         

@@ -10,7 +10,6 @@
 		E323EEAB1A6FF455F714769E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBCBED97050A0AFFA71339 /* libPods.a */; };
 		ED5296E71BFEB58100B2EF7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296E61BFEB58100B2EF7C /* main.m */; };
 		ED5296EA1BFEB58100B2EF7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296E91BFEB58100B2EF7C /* AppDelegate.m */; };
-		ED5296ED1BFEB58100B2EF7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296EC1BFEB58100B2EF7C /* ViewController.m */; };
 		ED5296F01BFEB58100B2EF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5296EE1BFEB58100B2EF7C /* Main.storyboard */; };
 		ED5296F21BFEB58100B2EF7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5296F11BFEB58100B2EF7C /* Assets.xcassets */; };
 		ED5296F51BFEB58100B2EF7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5296F31BFEB58100B2EF7C /* LaunchScreen.storyboard */; };
@@ -19,6 +18,8 @@
 		ED65DBE01BFEBEBD00244EA4 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBDF1BFEBEBD00244EA4 /* NavViewController.m */; };
 		ED65DBE31BFEBF9700244EA4 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */; };
 		ED65DBE61BFEBFA900244EA4 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */; };
+		ED65DBEA1BFEC61200244EA4 /* AllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBE91BFEC61200244EA4 /* AllTableViewController.m */; };
+		ED65DBEE1BFEC6C800244EA4 /* AllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65DBED1BFEC6C800244EA4 /* AllTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,6 @@
 		ED5296E61BFEB58100B2EF7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED5296E81BFEB58100B2EF7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED5296E91BFEB58100B2EF7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED5296EB1BFEB58100B2EF7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED5296EC1BFEB58100B2EF7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ED5296EF1BFEB58100B2EF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED5296F11BFEB58100B2EF7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5296F41BFEB58100B2EF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +63,10 @@
 		ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		ED65DBE41BFEBFA900244EA4 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
 		ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		ED65DBE81BFEC61200244EA4 /* AllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTableViewController.h; sourceTree = "<group>"; };
+		ED65DBE91BFEC61200244EA4 /* AllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTableViewController.m; sourceTree = "<group>"; };
+		ED65DBEC1BFEC6C800244EA4 /* AllTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTableViewCell.h; sourceTree = "<group>"; };
+		ED65DBED1BFEC6C800244EA4 /* AllTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,14 +180,24 @@
 		ED65DBE71BFEBFAD00244EA4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ED5296EB1BFEB58100B2EF7C /* ViewController.h */,
-				ED5296EC1BFEB58100B2EF7C /* ViewController.m */,
+				ED65DBEB1BFEC6A900244EA4 /* AllTableView */,
 				ED65DBE11BFEBF9700244EA4 /* CalendarViewController.h */,
 				ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */,
 				ED65DBE41BFEBFA900244EA4 /* ProgressViewController.h */,
 				ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED65DBEB1BFEC6A900244EA4 /* AllTableView */ = {
+			isa = PBXGroup;
+			children = (
+				ED65DBE81BFEC61200244EA4 /* AllTableViewController.h */,
+				ED65DBE91BFEC61200244EA4 /* AllTableViewController.m */,
+				ED65DBEC1BFEC6C800244EA4 /* AllTableViewCell.h */,
+				ED65DBED1BFEC6C800244EA4 /* AllTableViewCell.m */,
+			);
+			name = AllTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,8 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5296ED1BFEB58100B2EF7C /* ViewController.m in Sources */,
+				ED65DBEE1BFEC6C800244EA4 /* AllTableViewCell.m in Sources */,
 				ED65DBE61BFEBFA900244EA4 /* ProgressViewController.m in Sources */,
+				ED65DBEA1BFEC61200244EA4 /* AllTableViewController.m in Sources */,
 				ED5296EA1BFEB58100B2EF7C /* AppDelegate.m in Sources */,
 				ED65DBE01BFEBEBD00244EA4 /* NavViewController.m in Sources */,
 				ED65DBE31BFEBF9700244EA4 /* CalendarViewController.m in Sources */,
