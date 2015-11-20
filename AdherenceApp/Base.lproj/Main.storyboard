@@ -51,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="sDM-S0-ApX" customClass="AllTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="allCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="allCell" rowHeight="90" id="sDM-S0-ApX" customClass="AllTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sDM-S0-ApX" id="DQn-Dp-2Jl">
@@ -59,19 +59,23 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMX-PB-ss8">
-                                            <rect key="frame" x="30" y="16" width="77" height="26"/>
+                                            <rect key="frame" x="30" y="16" width="191" height="26"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IN 3 HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnq-Rc-2tf">
-                                            <rect key="frame" x="30" y="55" width="91" height="21"/>
+                                            <rect key="frame" x="30" y="55" width="182" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pillLabel" destination="iMX-PB-ss8" id="qca-fw-8iv"/>
+                                    <outlet property="timeLabel" destination="Lnq-Rc-2tf" id="vs6-4b-cZQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

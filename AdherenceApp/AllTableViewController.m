@@ -7,6 +7,8 @@
 //
 
 #import "AllTableViewController.h"
+#import "NavViewController.h"
+#import "AllTableViewCell.h"
 
 @interface AllTableViewController ()
 @property(strong, nonatomic) NSMutableArray* pillList;
@@ -17,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (self.pillList == nil) {
-        self.pillList = [[NSMutableArray alloc] initWithObjects:@"Advil", @"Aderall", @"Xanax", @"Ponstyl", @"Benadryl", nil];
+        self.pillList = [[NSMutableArray alloc] initWithObjects:@"Advil", @"Aderall", @"Xanax", @"Ponstyl", @"Benadryl", @"Vinamin C", nil];
     }
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.navigationController action:@selector(openVerticalMenu:)];
     
@@ -32,24 +34,28 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.pillList count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    AllTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"allCell"];
+    cell.pillLabel.text = [self.pillList objectAtIndex:[indexPath row]];
+    if ([indexPath row] == 1) {
+        cell.timeLabel.text = @"IN 1 HOUR";
+    } else if ([indexPath row] == 0) {
+        cell.timeLabel.text = @"NOW";
+    }else {
+        cell.timeLabel.text = [NSString stringWithFormat:@"IN %ld HOURS", (long)[indexPath row]];
+    }
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
