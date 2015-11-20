@@ -1,0 +1,6 @@
+framework module FCVerticalMenu {
+  umbrella header "FCVerticalMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

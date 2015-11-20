@@ -82,3 +82,18 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods/Bolts.framework"
+  install_framework "Pods/FCVerticalMenu.framework"
+  install_framework "Pods/MBCircularProgressBar.framework"
+  install_framework "Pods/Parse.framework"
+  install_framework "Pods/RSDayFlow.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods/Bolts.framework"
+  install_framework "Pods/FCVerticalMenu.framework"
+  install_framework "Pods/MBCircularProgressBar.framework"
+  install_framework "Pods/Parse.framework"
+  install_framework "Pods/RSDayFlow.framework"
+fi

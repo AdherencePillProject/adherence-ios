@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E323EEAB1A6FF455F714769E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBCBED97050A0AFFA71339 /* libPods.a */; };
+		01A30C211BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A30C201BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m */; };
+		C108E4C217F8A8F8F3D4E72B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539928CFB4C7D8AD2B44CD8 /* Pods.framework */; };
 		ED5296E71BFEB58100B2EF7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296E61BFEB58100B2EF7C /* main.m */; };
 		ED5296EA1BFEB58100B2EF7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296E91BFEB58100B2EF7C /* AppDelegate.m */; };
 		ED5296F01BFEB58100B2EF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5296EE1BFEB58100B2EF7C /* Main.storyboard */; };
@@ -40,8 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04BBCBED97050A0AFFA71339 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A30C1F1BFF9A7A00ABFE08 /* PillScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillScheduleTableViewCell.h; sourceTree = "<group>"; };
+		01A30C201BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillScheduleTableViewCell.m; sourceTree = "<group>"; };
 		254FCB88FEA6244FFC76A619 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A539928CFB4C7D8AD2B44CD8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3634AF4AC1C9A923494592B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ED5296E21BFEB58100B2EF7C /* AdherenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdherenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5296E61BFEB58100B2EF7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E323EEAB1A6FF455F714769E /* libPods.a in Frameworks */,
+				C108E4C217F8A8F8F3D4E72B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +98,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A30C1E1BFF9A5B00ABFE08 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				ED65DBE41BFEBFA900244EA4 /* ProgressViewController.h */,
+				ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */,
+				01A30C1F1BFF9A7A00ABFE08 /* PillScheduleTableViewCell.h */,
+				01A30C201BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m */,
+			);
+			name = ProgressView;
+			sourceTree = "<group>";
+		};
 		44CE4690512E068196784FAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04BBCBED97050A0AFFA71339 /* libPods.a */,
+				A539928CFB4C7D8AD2B44CD8 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,8 +197,7 @@
 				ED65DBEB1BFEC6A900244EA4 /* AllTableView */,
 				ED65DBE11BFEBF9700244EA4 /* CalendarViewController.h */,
 				ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */,
-				ED65DBE41BFEBFA900244EA4 /* ProgressViewController.h */,
-				ED65DBE51BFEBFA900244EA4 /* ProgressViewController.m */,
+				01A30C1E1BFF9A5B00ABFE08 /* ProgressView */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -388,6 +401,7 @@
 				ED65DBE01BFEBEBD00244EA4 /* NavViewController.m in Sources */,
 				ED65DBE31BFEBF9700244EA4 /* CalendarViewController.m in Sources */,
 				ED5296E71BFEB58100B2EF7C /* main.m in Sources */,
+				01A30C211BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

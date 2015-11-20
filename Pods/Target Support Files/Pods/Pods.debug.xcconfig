@@ -1,5 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bolts" "${PODS_ROOT}/Headers/Public/FCVerticalMenu" "${PODS_ROOT}/Headers/Public/MBCircularProgressBar" "${PODS_ROOT}/Headers/Public/Parse" "${PODS_ROOT}/Headers/Public/RSDayFlow"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Bolts" -isystem "${PODS_ROOT}/Headers/Public/FCVerticalMenu" -isystem "${PODS_ROOT}/Headers/Public/MBCircularProgressBar" -isystem "${PODS_ROOT}/Headers/Public/Parse" -isystem "${PODS_ROOT}/Headers/Public/RSDayFlow"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Bolts" -l"FCVerticalMenu" -l"MBCircularProgressBar" -l"Parse" -l"RSDayFlow" -l"sqlite3" -l"z" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "Accounts" -weak_framework "Social"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Bolts.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FCVerticalMenu.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/MBCircularProgressBar.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Parse.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/RSDayFlow.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Bolts" -framework "FCVerticalMenu" -framework "MBCircularProgressBar" -framework "Parse" -framework "RSDayFlow"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods
 PODS_ROOT = ${SRCROOT}/Pods
