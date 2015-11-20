@@ -9,6 +9,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FCVerticalMenu-FCVerticalMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FCVerticalMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBCircularProgressBar-MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,8 +39,54 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RSDayFlow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>130ACB22FAE0DB6A8F1E2C5EECE85AD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3137C19372080F6F08C7D824B3F418B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62108ECC97162AF8CA269E1B77681801</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>709FC7FB71AF9BD8ECE7DC8342A7B26D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A48601FEE4437A924848DB48369BA809</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B53DF583949C0313F8655A28EF6EB07D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C77DAF7757193C315C33A1F37488FF8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ED735F667B3397A12546E9332540998B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

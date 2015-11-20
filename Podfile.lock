@@ -5,15 +5,24 @@ PODS:
   - Bolts/AppLinks (1.5.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.5.0)
+  - FCVerticalMenu (0.1.3)
+  - MBCircularProgressBar (0.3.2)
   - Parse (1.10.0):
     - Bolts/Tasks (~> 1.5)
+  - RSDayFlow (1.2.0)
 
 DEPENDENCIES:
   - Bolts
+  - FCVerticalMenu
+  - MBCircularProgressBar
   - Parse
+  - RSDayFlow
 
 SPEC CHECKSUMS:
   Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  FCVerticalMenu: 1f9d11018d78fdb5eac858fb13b7fc60d09a03ee
+  MBCircularProgressBar: da24e75aa8a231564f10eb8d6d942fa78343486c
   Parse: 90b2544822200f84b18bfacc4e8b0a3a6c3584a2
+  RSDayFlow: 5eeed1aac1ef4c47efc69bdbc8664afb64f74c60
 
 COCOAPODS: 0.39.0
