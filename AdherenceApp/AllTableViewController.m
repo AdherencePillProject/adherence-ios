@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (self.pillList == nil) {
-        self.pillList = [[NSMutableArray alloc] initWithObjects:@"Advil", @"Aderall", @"Xanax", @"Ponstyl", @"Benadryl", @"Vinamin C", nil];
+        self.pillList = [[NSMutableArray alloc] initWithObjects:@"Advil", @"Aderall", @"Xanax", @"Ponstyl", @"Benadryl", @"Vinamin C", @"Ambien", @"Amaryl", @"Vicodin", @"Ultram", nil];
     }
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.navigationController action:@selector(openVerticalMenu:)];
     
@@ -47,10 +47,13 @@
     cell.pillLabel.text = [self.pillList objectAtIndex:[indexPath row]];
     if ([indexPath row] == 1) {
         cell.timeLabel.text = @"IN 1 HOUR";
+         cell.timeLabel.textColor = [UIColor blackColor];
     } else if ([indexPath row] == 0) {
         cell.timeLabel.text = @"NOW";
+        cell.timeLabel.textColor = [UIColor redColor];
     }else {
         cell.timeLabel.text = [NSString stringWithFormat:@"IN %ld HOURS", (long)[indexPath row]];
+         cell.timeLabel.textColor = [UIColor blackColor];
     }
     
     return cell;

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSDFDatePickerView.h"
 
-@interface CalendarViewController : UIViewController
+@interface CalendarViewController : UIViewController <RSDFDatePickerViewDelegate, RSDFDatePickerViewDataSource>
 
 @end
