@@ -222,11 +222,7 @@
     {
         cell.textLabel.text = deviceName;
     }
-    
-    UIView *bgColorView = [[UIView alloc] init];
-    bgColorView.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:95.0f/255.0f blue:34.0f/255.0f alpha:1];
-    [cell setSelectedBackgroundView:bgColorView];
-    
+        
     return cell;
 }
 
