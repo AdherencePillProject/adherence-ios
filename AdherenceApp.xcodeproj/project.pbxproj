@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		017737B81C59534E0077DC0A /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017737B71C59534E0077DC0A /* ScanViewController.m */; };
+		017737BC1C5955A80077DC0A /* DeviceCommunicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017737BB1C5955A80077DC0A /* DeviceCommunicateViewController.m */; };
+		017737BE1C5956D80077DC0A /* BLECommanderiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017737BD1C5956D80077DC0A /* BLECommanderiOS.framework */; };
 		01A30C211BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A30C201BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m */; };
 		C108E4C217F8A8F8F3D4E72B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539928CFB4C7D8AD2B44CD8 /* Pods.framework */; };
 		ED5296E71BFEB58100B2EF7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296E61BFEB58100B2EF7C /* main.m */; };
@@ -41,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		017737B61C59534E0077DC0A /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		017737B71C59534E0077DC0A /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		017737BA1C5955A80077DC0A /* DeviceCommunicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceCommunicateViewController.h; sourceTree = "<group>"; };
+		017737BB1C5955A80077DC0A /* DeviceCommunicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceCommunicateViewController.m; sourceTree = "<group>"; };
+		017737BD1C5956D80077DC0A /* BLECommanderiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLECommanderiOS.framework; sourceTree = "<group>"; };
 		01A30C1F1BFF9A7A00ABFE08 /* PillScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillScheduleTableViewCell.h; sourceTree = "<group>"; };
 		01A30C201BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillScheduleTableViewCell.m; sourceTree = "<group>"; };
 		254FCB88FEA6244FFC76A619 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C108E4C217F8A8F8F3D4E72B /* Pods.framework in Frameworks */,
+				017737BE1C5956D80077DC0A /* BLECommanderiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017737B51C59532A0077DC0A /* ScanView */ = {
+			isa = PBXGroup;
+			children = (
+				017737B61C59534E0077DC0A /* ScanViewController.h */,
+				017737B71C59534E0077DC0A /* ScanViewController.m */,
+			);
+			name = ScanView;
+			sourceTree = "<group>";
+		};
+		017737B91C5955970077DC0A /* DeviceView */ = {
+			isa = PBXGroup;
+			children = (
+				017737BA1C5955A80077DC0A /* DeviceCommunicateViewController.h */,
+				017737BB1C5955A80077DC0A /* DeviceCommunicateViewController.m */,
+			);
+			name = DeviceView;
+			sourceTree = "<group>";
+		};
 		01A30C1E1BFF9A5B00ABFE08 /* ProgressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +139,7 @@
 		44CE4690512E068196784FAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				017737BD1C5956D80077DC0A /* BLECommanderiOS.framework */,
 				A539928CFB4C7D8AD2B44CD8 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -194,6 +222,8 @@
 		ED65DBE71BFEBFAD00244EA4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				017737B91C5955970077DC0A /* DeviceView */,
+				017737B51C59532A0077DC0A /* ScanView */,
 				ED65DBEB1BFEC6A900244EA4 /* AllTableView */,
 				ED65DBE11BFEBF9700244EA4 /* CalendarViewController.h */,
 				ED65DBE21BFEBF9700244EA4 /* CalendarViewController.m */,
@@ -394,7 +424,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017737BC1C5955A80077DC0A /* DeviceCommunicateViewController.m in Sources */,
 				ED65DBEE1BFEC6C800244EA4 /* AllTableViewCell.m in Sources */,
+				017737B81C59534E0077DC0A /* ScanViewController.m in Sources */,
 				ED65DBE61BFEBFA900244EA4 /* ProgressViewController.m in Sources */,
 				ED65DBEA1BFEC61200244EA4 /* AllTableViewController.m in Sources */,
 				ED5296EA1BFEB58100B2EF7C /* AppDelegate.m in Sources */,
@@ -541,6 +573,10 @@
 			baseConfigurationReference = C3634AF4AC1C9A923494592B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AdherenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanaazriadev.AdherenceApp;
@@ -553,6 +589,10 @@
 			baseConfigurationReference = 254FCB88FEA6244FFC76A619 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AdherenceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanaazriadev.AdherenceApp;
