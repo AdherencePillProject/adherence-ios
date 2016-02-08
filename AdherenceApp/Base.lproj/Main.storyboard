@@ -408,8 +408,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef4-wl-LNG">
-                                <rect key="frame" x="16" y="161" width="343" height="490"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef4-wl-LNG">
+                                <rect key="frame" x="16" y="161" width="343" height="277"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -444,6 +444,10 @@
                                     <outlet property="delegate" destination="ptD-vU-gMg" id="7y0-gt-qhU"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0HU-Bh-6ag">
+                                <rect key="frame" x="20" y="446" width="335" height="213"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -451,21 +455,18 @@
                             <constraint firstItem="6iS-QA-4Km" firstAttribute="top" secondItem="xcL-vZ-xUm" secondAttribute="top" id="65h-xD-QfV"/>
                             <constraint firstItem="6iS-QA-4Km" firstAttribute="bottom" secondItem="xcL-vZ-xUm" secondAttribute="bottom" id="AIP-Kk-OVK"/>
                             <constraint firstItem="6iS-QA-4Km" firstAttribute="leading" secondItem="xcL-vZ-xUm" secondAttribute="leading" constant="-10" id="AK2-Jj-Gzi"/>
-                            <constraint firstAttribute="trailing" secondItem="Ef4-wl-LNG" secondAttribute="trailing" constant="16" id="DEi-9A-FLL"/>
                             <constraint firstAttribute="trailing" secondItem="6iS-QA-4Km" secondAttribute="trailing" constant="16" id="OJ9-pz-PeW"/>
-                            <constraint firstItem="2UJ-Ig-yGF" firstAttribute="top" secondItem="Ef4-wl-LNG" secondAttribute="bottom" constant="16" id="Zed-lf-kzb"/>
                             <constraint firstItem="6iS-QA-4Km" firstAttribute="trailing" secondItem="xcL-vZ-xUm" secondAttribute="trailing" constant="10" id="h3m-ga-8t1"/>
                             <constraint firstItem="IZJ-C5-KYH" firstAttribute="top" secondItem="TNB-xS-AmO" secondAttribute="bottom" constant="9" id="i5Y-8t-kuR"/>
                             <constraint firstItem="6iS-QA-4Km" firstAttribute="top" secondItem="IZJ-C5-KYH" secondAttribute="bottom" constant="8" id="mHb-lw-8mr"/>
                             <constraint firstItem="6iS-QA-4Km" firstAttribute="leading" secondItem="ftm-tF-KjX" secondAttribute="leading" constant="16" id="maq-P9-3la"/>
-                            <constraint firstItem="Ef4-wl-LNG" firstAttribute="top" secondItem="6iS-QA-4Km" secondAttribute="bottom" constant="8" id="oap-kK-Rne"/>
-                            <constraint firstItem="Ef4-wl-LNG" firstAttribute="leading" secondItem="ftm-tF-KjX" secondAttribute="leading" constant="16" id="pP2-Ck-VON"/>
                             <constraint firstItem="IZJ-C5-KYH" firstAttribute="leading" secondItem="ftm-tF-KjX" secondAttribute="leading" constant="16" id="wuT-7u-jsZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ygL-Uh-bFO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="imageView" destination="0HU-Bh-6ag" id="Hkn-pf-XzW"/>
                         <outlet property="logTextView" destination="Ef4-wl-LNG" id="t5V-Ww-w7R"/>
                         <outlet property="messageTextfield" destination="xcL-vZ-xUm" id="HTw-db-6G8"/>
                         <outlet property="segementControl" destination="IZJ-C5-KYH" id="rjP-4X-2EO"/>

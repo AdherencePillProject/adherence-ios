@@ -13,15 +13,21 @@
 @property (nonatomic, assign) BOOL lastWrittenConsoleTextWasResponseReceived;
 @property (nonatomic, strong) NSString *returnLineString;
 @property (nonatomic, assign) NSInteger selectedEndLineIndex;
+@property (nonatomic, strong) NSMutableData *buffer;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation DeviceCommunicateViewController
+int num; int currImageLength;
+bool readingImage;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self setupViewAppearance];
-    
+    num = 0;
+    readingImage = false;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey:@"lineEndKey"])
     {
@@ -469,12 +475,47 @@
 - (void)dataReadDelegate:(NSData *) newData
 {
     //Check mode, if stream then any data received will be from the computer/serial.
-    
     if (self.mBleCommanderiOS.busMode == STREAM_MODE)
     {
-        //Stream mode
         NSString *str = [[NSString alloc] initWithBytes:[newData bytes] length:newData.length encoding:NSUTF8StringEncoding];
-        [self appendIncomingResponse:str];
+        NSLog(@"%@", str);
+
+        if(readingImage){
+            if(num > currImageLength){
+                NSLog(@"%@", str);
+                self.imageView.image = [UIImage imageWithData:self.buffer];
+                self.buffer = nil;
+                readingImage = false;
+                num = 0;
+            }
+            [self.buffer appendData:newData];
+            num+= newData.length;
+            NSLog(@"%d", num);
+        }
+        else {
+            if([str  isEqual: @"I"]){
+                NSLog(@"%@", str);
+            }
+            
+            if(newData.length == 2){
+                int* b = (int *)newData.bytes;
+                currImageLength = *b;
+                NSLog(@"%d",currImageLength);
+                self.buffer = [[NSMutableData alloc] init];
+                readingImage = true;
+            }
+            
+            if(newData.length == 20){
+                if(self.buffer){
+                    [self.buffer appendData:newData];
+                    self.imageView.image = [UIImage imageWithData:self.buffer];
+                }
+            }
+        }
+        
+
+
+        //Stream mode
     }
     else
     {
@@ -485,6 +526,7 @@
         //Command mode
         [self consoleAppend:str isIncomingFromDevice:false];
     }
+
 }
 
 - (void) dataWriteDelegate
