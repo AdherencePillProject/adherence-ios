@@ -2,7 +2,7 @@
 
 #import "DeviceCommunicateViewController.h"
 #import "BLECommanderiOS/BLECommanderiOS.h"
-
+#import <Parse/Parse.h>
 #define kStreamMode 0
 #define kCommandMode 1
 
@@ -478,12 +478,37 @@ bool readingImage;
     if (self.mBleCommanderiOS.busMode == STREAM_MODE)
     {
         NSString *str = [[NSString alloc] initWithBytes:[newData bytes] length:newData.length encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", str);
+        if(str != nil){
+            [self consoleAppend:str isIncomingFromDevice:false];
+        }
 
         if(readingImage){
             if(num > currImageLength){
                 NSLog(@"%@", str);
                 self.imageView.image = [UIImage imageWithData:self.buffer];
+                [self consoleAppend:@"Saving image..." isIncomingFromDevice:false];
+                PFFile *imageFile = [PFFile fileWithName:[NSString stringWithFormat:@"Image-%lu", (unsigned long)[self.buffer hash]] data:self.buffer];
+                
+                // Save the image to Parse
+                
+                [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (!error) {
+                        PFObject* newPhotoObject = [PFObject objectWithClassName:@"ImageStorageDev"];
+                        [newPhotoObject setObject:imageFile forKey:@"Image"];
+                        
+                        [newPhotoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                            if (!error) {
+                                [self consoleAppend:@"Image saved!" isIncomingFromDevice:false];
+                                NSLog(@"Saved");
+                            }
+                            else{
+                                // Error
+                                NSLog(@"Error: %@ %@", error, [error userInfo]);
+                            }
+                        }];
+                    }
+                }];
+
                 self.buffer = nil;
                 readingImage = false;
                 num = 0;

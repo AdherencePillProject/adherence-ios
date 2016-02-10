@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdherenceApp/DeviceCommunicateViewController.m"
-            timestampString = "476602386.924627"
+            timestampString = "476827856.789078"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "522"
-            endingLineNumber = "522"
+            startingLineNumber = "547"
+            endingLineNumber = "547"
             landmarkName = "-dataReadDelegate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdherenceApp/DeviceCommunicateViewController.m"
-            timestampString = "476602386.924627"
+            timestampString = "476827356.203088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "480"
-            endingLineNumber = "480"
+            startingLineNumber = "481"
+            endingLineNumber = "481"
             landmarkName = "-dataReadDelegate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdherenceApp/DeviceCommunicateViewController.m"
-            timestampString = "476602386.924627"
+            timestampString = "476827356.203088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "485"
-            endingLineNumber = "485"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
             landmarkName = "-dataReadDelegate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdherenceApp/DeviceCommunicateViewController.m"
-            timestampString = "476602386.924627"
+            timestampString = "476827856.789078"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "489"
-            endingLineNumber = "489"
+            startingLineNumber = "514"
+            endingLineNumber = "514"
             landmarkName = "-dataReadDelegate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdherenceApp/DeviceCommunicateViewController.m"
-            timestampString = "476602386.924627"
+            timestampString = "476827856.789078"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "501"
-            endingLineNumber = "501"
+            startingLineNumber = "526"
+            endingLineNumber = "526"
             landmarkName = "-dataReadDelegate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdherenceApp/DeviceCommunicateViewController.m"
-            timestampString = "476602704.22182"
+            timestampString = "476827356.203088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
+            startingLineNumber = "486"
+            endingLineNumber = "486"
             landmarkName = "-dataReadDelegate:"
             landmarkType = "5">
          </BreakpointContent>
