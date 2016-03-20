@@ -46,6 +46,9 @@
     FCVerticalMenuItem *item3 = [[FCVerticalMenuItem alloc] initWithTitle:@"Calendar"
                                                              andIconImage:nil];
     
+    FCVerticalMenuItem *item4 = [[FCVerticalMenuItem alloc] initWithTitle:@"Pairings"
+                                                                                          andIconImage:nil];
+    
     
     item1.actionBlock = ^{
         AllTableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"left"];
@@ -72,8 +75,17 @@
         [self setViewControllers:@[vc] animated:NO];
         
     };
+    item4.actionBlock = ^{
+        
+        CalendarViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"bottlesVC"];
+        
+        if ([self.viewControllers[0] isEqual:vc])
+            return;
+        [self setViewControllers:@[vc] animated:NO];
+        
+    };
     
-    _verticalMenu = [[FCVerticalMenu alloc] initWithItems:@[item1, item2, item3]];
+    _verticalMenu = [[FCVerticalMenu alloc] initWithItems:@[item1, item2, item3, item4]];
     _verticalMenu.appearsBehindNavigationBar = YES;
     
 }

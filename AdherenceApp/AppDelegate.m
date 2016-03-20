@@ -22,6 +22,23 @@
     // Initialize Parse.
     [Parse setApplicationId:@"BDo39lSOtPuBwDfq0EBDgIjTzztIQE38Fuk03EcR"
                   clientKey:@"6exCVtTYC6JhQP6gw1OFByyP2RRq5McznAsoQ3Gq"];
+    
+    if([PFUser currentUser]) {
+        // user authenticated
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                                 bundle: nil];
+        
+        UINavigationController *navigation = (UINavigationController*)[mainStoryboard
+                                                                       instantiateViewControllerWithIdentifier: @"mainNav"];
+        UIViewController* homeVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"middle"];
+        [navigation pushViewController:homeVC animated:NO];
+        self.window.rootViewController = navigation;
+        [self.window makeKeyAndVisible];
+        
+    } else {
+        // No user is signed in
+    }
 
     return YES;
 }
