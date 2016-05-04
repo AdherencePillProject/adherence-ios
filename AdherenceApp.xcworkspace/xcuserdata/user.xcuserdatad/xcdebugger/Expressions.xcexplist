@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DeviceCommunicateViewController setMBleCommanderiOS:]:DeviceCommunicateViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.mBleCommanderiOS busMode]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DeviceCommunicateViewController dataReadDelegate:]:DeviceCommunicateViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "STREAM_MODE">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -220,6 +220,11 @@ bool readingImage;
 {
     _mBleCommanderiOS = mBleCommanderiOS;
     self.mBleCommanderiOS.delegate = self;
+    [self.mBleCommanderiOS writeBusMode:STREAM_MODE];
+    if (![self.mBleCommanderiOS writeBusMode:STREAM_MODE])
+    {
+        NSLog(@"Failed to change mode to stream");
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -475,8 +480,7 @@ bool readingImage;
 - (void)dataReadDelegate:(NSData *) newData
 {
     //Check mode, if stream then any data received will be from the computer/serial.
-    if (self.mBleCommanderiOS.busMode == STREAM_MODE)
-    {
+
         NSString *str = [[NSString alloc] initWithBytes:[newData bytes] length:newData.length encoding:NSUTF8StringEncoding];
         if(str != nil){
             [self consoleAppend:str isIncomingFromDevice:false];
@@ -541,16 +545,6 @@ bool readingImage;
 
 
         //Stream mode
-    }
-    else
-    {
-        NSString *str = [[NSString alloc] initWithBytes:[newData bytes] length:newData.length encoding:NSUTF8StringEncoding];
-        str = [str stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-        str = [NSString stringWithFormat:@"%@", str];
-        
-        //Command mode
-        [self consoleAppend:str isIncomingFromDevice:false];
-    }
 
 }
 
