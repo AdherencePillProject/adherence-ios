@@ -11,6 +11,10 @@
 		017737BC1C5955A80077DC0A /* DeviceCommunicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017737BB1C5955A80077DC0A /* DeviceCommunicateViewController.m */; };
 		017737BE1C5956D80077DC0A /* BLECommanderiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017737BD1C5956D80077DC0A /* BLECommanderiOS.framework */; };
 		01A30C211BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A30C201BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m */; };
+		01B79B6B1CE6BE80003CA0EA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B79B6A1CE6BE80003CA0EA /* Reachability.m */; };
+		01B79B6E1CE6BEFF003CA0EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B79B6D1CE6BEFF003CA0EA /* SystemConfiguration.framework */; };
+		01B79B711CE6BF0D003CA0EA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B79B6F1CE6BF0D003CA0EA /* libsqlite3.0.tbd */; };
+		01B79B721CE6BF0D003CA0EA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B79B701CE6BF0D003CA0EA /* libsqlite3.tbd */; };
 		C108E4C217F8A8F8F3D4E72B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539928CFB4C7D8AD2B44CD8 /* Pods.framework */; };
 		ED5296E71BFEB58100B2EF7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296E61BFEB58100B2EF7C /* main.m */; };
 		ED5296EA1BFEB58100B2EF7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5296E91BFEB58100B2EF7C /* AppDelegate.m */; };
@@ -55,6 +59,11 @@
 		017737BD1C5956D80077DC0A /* BLECommanderiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLECommanderiOS.framework; sourceTree = "<group>"; };
 		01A30C1F1BFF9A7A00ABFE08 /* PillScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillScheduleTableViewCell.h; sourceTree = "<group>"; };
 		01A30C201BFF9A7A00ABFE08 /* PillScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillScheduleTableViewCell.m; sourceTree = "<group>"; };
+		01B79B691CE6BE80003CA0EA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		01B79B6A1CE6BE80003CA0EA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		01B79B6D1CE6BEFF003CA0EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		01B79B6F1CE6BF0D003CA0EA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		01B79B701CE6BF0D003CA0EA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		254FCB88FEA6244FFC76A619 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A539928CFB4C7D8AD2B44CD8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3634AF4AC1C9A923494592B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B79B711CE6BF0D003CA0EA /* libsqlite3.0.tbd in Frameworks */,
+				01B79B721CE6BF0D003CA0EA /* libsqlite3.tbd in Frameworks */,
+				01B79B6E1CE6BEFF003CA0EA /* SystemConfiguration.framework in Frameworks */,
 				C108E4C217F8A8F8F3D4E72B /* Pods.framework in Frameworks */,
 				017737BE1C5956D80077DC0A /* BLECommanderiOS.framework in Frameworks */,
 			);
@@ -148,9 +160,21 @@
 			name = ProgressView;
 			sourceTree = "<group>";
 		};
+		01B79B6C1CE6BE85003CA0EA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				01B79B691CE6BE80003CA0EA /* Reachability.h */,
+				01B79B6A1CE6BE80003CA0EA /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		44CE4690512E068196784FAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01B79B6F1CE6BF0D003CA0EA /* libsqlite3.0.tbd */,
+				01B79B701CE6BF0D003CA0EA /* libsqlite3.tbd */,
+				01B79B6D1CE6BEFF003CA0EA /* SystemConfiguration.framework */,
 				017737BD1C5956D80077DC0A /* BLECommanderiOS.framework */,
 				A539928CFB4C7D8AD2B44CD8 /* Pods.framework */,
 			);
@@ -195,6 +219,7 @@
 				ED5296E91BFEB58100B2EF7C /* AppDelegate.m */,
 				ED65DBDE1BFEBEBD00244EA4 /* NavViewController.h */,
 				ED65DBDF1BFEBEBD00244EA4 /* NavViewController.m */,
+				01B79B6C1CE6BE85003CA0EA /* Reachability */,
 				ED65DBE71BFEBFAD00244EA4 /* ViewControllers */,
 				ED5296EE1BFEB58100B2EF7C /* Main.storyboard */,
 				ED5296F11BFEB58100B2EF7C /* Assets.xcassets */,
@@ -449,6 +474,7 @@
 				ED65DBEE1BFEC6C800244EA4 /* AllTableViewCell.m in Sources */,
 				017737B81C59534E0077DC0A /* ScanViewController.m in Sources */,
 				ED65DBE61BFEBFA900244EA4 /* ProgressViewController.m in Sources */,
+				01B79B6B1CE6BE80003CA0EA /* Reachability.m in Sources */,
 				ED8234D21C89F60600C25B72 /* PrescriptionViewController.m in Sources */,
 				ED65DBEA1BFEC61200244EA4 /* AllTableViewController.m in Sources */,
 				ED8234CF1C89F19500C25B72 /* BottlesTableViewCell.m in Sources */,

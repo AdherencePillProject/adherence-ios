@@ -51,14 +51,14 @@
     
     
     item1.actionBlock = ^{
-        AllTableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"left"];
+        AllTableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"pillListVC"];
         if ([self.viewControllers[0] isEqual:vc])
             return;
         
         [self setViewControllers:@[vc] animated:NO];
     };
     item2.actionBlock = ^{
-        ProgressViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"middle"];
+        ProgressViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"dailyVC"];
         
         if ([self.viewControllers[0] isEqual:vc])
             return;
@@ -68,7 +68,7 @@
     };
     item3.actionBlock = ^{
         
-        CalendarViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"right"];
+        CalendarViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"calendarVC"];
         
         if ([self.viewControllers[0] isEqual:vc])
             return;
